@@ -1,12 +1,12 @@
-const calculateScore = (frames: string) => {
-  if (frames === "X X X X X X X X X X X X") return 300;
-  if (frames === "9- 9- 9- 9- 9- 9- 9- 9- 9- 9-") return 90;
-  return 150;
-};
-describe("Given a string of frames should return the final score for the game", () => {
-  test("should turn from N to W", () => {
+import { calculateScore } from "./score";
+describe("Given a string of scores should return the final score for the game", () => {
+  test("", () => {
     expect(calculateScore("X X X X X X X X X X X X")).toBe(300);
+  });
+  test("", () => {
     expect(calculateScore("9- 9- 9- 9- 9- 9- 9- 9- 9- 9-")).toBe(90);
+  });
+  test("", () => {
     expect(calculateScore("5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5")).toBe(150);
   });
 });
